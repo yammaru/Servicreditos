@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2>Registro</h2>
+            <form>
+                <div class="form-group">
+                    <label>capital</label>
+                    <input type="text" name="capital" [(ngModel)]="credito.capital" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Tasa de Interes</label>
+                    <input type="text" name="interes" [(ngModel)]="credito.interes" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Tiempo</label>
+                    <input type="number" name="tiempo" [(ngModel)]="credito.tiempo" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>credito</label>
+                    <input type="number" name="credito" [(ngModel)]="credito.credito" class="form-control" />
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary mr-1" (click)="add()">Registro</button>
+                    <button class="btn btn-secondary" type="reset">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
